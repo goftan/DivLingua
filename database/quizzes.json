@@ -1,12 +1,314 @@
-[
-    {
-        "question": "What is the capital of France?",
-        "options": ["Paris", "London", "Rome", "Berlin"],
-        "answer": "Paris"
-    },
-    {
-        "question": "What is the capital of England?",
-        "options": ["Paris", "London", "Rome", "Berlin"],
-        "answer": "London"
-    }
-]
+{
+    "A1": [
+        {
+            "question": "What is the German word for 'apple'?",
+            "options": ["Apfel", "Birne", "Banane", "Orange"],
+            "answer": "Apfel"
+        },
+        {
+            "question": "Choose the correct translation for 'dog'.",
+            "options": ["Katze", "Hund", "Maus", "Pferd"],
+            "answer": "Hund"
+        },
+        {
+            "question": "What does 'Buch' mean in English?",
+            "options": ["Pen", "Book", "Table", "Chair"],
+            "answer": "Book"
+        },
+        {
+            "question": "How do you say 'good morning' in German?",
+            "options": ["Guten Morgen", "Gute Nacht", "Guten Tag", "Guten Abend"],
+            "answer": "Guten Morgen"
+        },
+        {
+            "question": "What is the correct word for 'woman'?",
+            "options": ["Mann", "Kind", "Frau", "Mädchen"],
+            "answer": "Frau"
+        },
+        {
+            "question": "What is 'Kaffee' in English?",
+            "options": ["Tea", "Milk", "Coffee", "Water"],
+            "answer": "Coffee"
+        },
+        {
+            "question": "How do you say 'yes' in German?",
+            "options": ["Nein", "Ja", "Bitte", "Danke"],
+            "answer": "Ja"
+        },
+        {
+            "question": "What does 'Tisch' mean in English?",
+            "options": ["Bed", "Table", "Chair", "Door"],
+            "answer": "Table"
+        },
+        {
+            "question": "Choose the correct translation for 'child'.",
+            "options": ["Mann", "Frau", "Kind", "Hund"],
+            "answer": "Kind"
+        },
+        {
+            "question": "What is the German word for 'water'?",
+            "options": ["Milch", "Saft", "Kaffee", "Wasser"],
+            "answer": "Wasser"
+        }
+    ],
+    "A2": [
+        {
+            "question": "Welches Wort beschreibt das Wetter, wenn es nicht regnet?",
+            "options": ["Schneit", "Regnet", "Sonnig", "Wolkig"],
+            "answer": "Sonnig"
+        },
+        {
+            "question": "Was ist das Gegenteil von 'alt'?",
+            "options": ["Neu", "Jung", "Groß", "Klein"],
+            "answer": "Jung"
+        },
+        {
+            "question": "Was bedeutet 'Gemüse' auf Englisch?",
+            "options": ["Fruit", "Vegetable", "Meat", "Bread"],
+            "answer": "Vegetable"
+        },
+        {
+            "question": "Wie sagt man 'I'm tired' auf Deutsch?",
+            "options": ["Ich bin hungrig", "Ich bin durstig", "Ich bin müde", "Ich bin krank"],
+            "answer": "Ich bin müde"
+        },
+        {
+            "question": "Was ist das richtige Wort für 'to cook'?",
+            "options": ["Essen", "Trinken", "Kochen", "Backen"],
+            "answer": "Kochen"
+        },
+        {
+            "question": "Was bedeutet 'Bäckerei' auf Englisch?",
+            "options": ["Butcher", "Bakery", "Pharmacy", "Library"],
+            "answer": "Bakery"
+        },
+        {
+            "question": "Wie sagt man 'excuse me' auf Deutsch?",
+            "options": ["Entschuldigung", "Bitte", "Danke", "Ja"],
+            "answer": "Entschuldigung"
+        },
+        {
+            "question": "Was bedeutet 'Schrank' auf Englisch?",
+            "options": ["Bed", "Table", "Cupboard", "Chair"],
+            "answer": "Cupboard"
+        },
+        {
+            "question": "Wählen Sie die richtige Übersetzung für 'to read'.",
+            "options": ["Schreiben", "Lesen", "Laufen", "Schwimmen"],
+            "answer": "Lesen"
+        },
+        {
+            "question": "Was ist das deutsche Wort für 'street'?",
+            "options": ["Haus", "Stadt", "Auto", "Straße"],
+            "answer": "Straße"
+        }
+    ],
+    "B1": [
+        {
+            "question": "Was ist das Synonym für 'beginnen'?",
+            "options": ["Beenden", "Fertig", "Anfangen", "Aufhören"],
+            "answer": "Anfangen"
+        },
+        {
+            "question": "Was bedeutet 'die Ausstellung' auf Englisch?",
+            "options": ["The concert", "The lecture", "The exhibition", "The performance"],
+            "answer": "The exhibition"
+        },
+        {
+            "question": "Wie sagt man 'I'm looking forward to the weekend' auf Deutsch?",
+            "options": ["Ich freue mich auf das Wochenende", "Ich mag das Wochenende", "Ich sehe das Wochenende", "Ich suche das Wochenende"],
+            "answer": "Ich freue mich auf das Wochenende"
+        },
+        {
+            "question": "Was ist das richtige Wort für 'to decide'?",
+            "options": ["Wählen", "Fragen", "Entscheiden", "Denken"],
+            "answer": "Entscheiden"
+        },
+        {
+            "question": "Was bedeutet 'der Vorschlag' auf Englisch?",
+            "options": ["The advice", "The suggestion", "The opinion", "The argument"],
+            "answer": "The suggestion"
+        },
+        {
+            "question": "Wie sagt man 'take care' auf Deutsch?",
+            "options": ["Pass auf", "Nimm es", "Gib auf", "Mach weiter"],
+            "answer": "Pass auf"
+        },
+        {
+            "question": "Was bedeutet 'der Erfolg' auf Englisch?",
+            "options": ["The failure", "The attempt", "The success", "The effort"],
+            "answer": "The success"
+        },
+        {
+            "question": "Was ist das deutsche Wort für 'opportunity'?",
+            "options": ["Möglichkeit", "Gelegenheit", "Chance", "Alle"],
+            "answer": "Alle"
+        },
+        {
+            "question": "Wählen Sie die richtige Übersetzung für 'to improve'.",
+            "options": ["Verbessern", "Vergrößern", "Verkleinern", "Verändern"],
+            "answer": "Verbessern"
+        },
+        {
+            "question": "Was ist das Gegenteil von 'schwer'?",
+            "options": ["Hoch", "Tief", "Leicht", "Kurz"],
+            "answer": "Leicht"
+        }
+    ],
+    "B2": [
+        {
+            "question": "Was ist das Synonym für 'erstaunlich'?",
+            "options": ["Langweilig", "Überraschend", "Schrecklich", "Ärgerlich"],
+            "answer": "Überraschend"
+        },
+        {
+            "question": "Welches Wort passt nicht in die Reihe: Apfel, Birne, Banane, Auto?",
+            "options": ["Apfel", "Birne", "Banane", "Auto"],
+            "answer": "Auto"
+        },
+        {
+            "question": "Wie sagt man auf Deutsch 'Every cloud has a silver lining'?",
+            "options": ["Jede Wolke hat eine Silberauskleidung", "Nach Regen kommt Sonnenschein", "Jeder Topf findet einen Deckel", "Alles hat ein Ende, nur die Wurst hat zwei"],
+            "answer": "Nach Regen kommt Sonnenschein"
+        },
+        {
+            "question": "Was ist das Gegenteil von 'mutig'?",
+            "options": ["Feige", "Tapfer", "Stark", "Schwach"],
+            "answer": "Feige"
+        },
+        {
+            "question": "Welches Wort beschreibt eine Person, die immer das Schlechteste erwartet?",
+            "options": ["Optimist", "Pessimist", "Realist", "Idealist"],
+            "answer": "Pessimist"
+        },
+        {
+            "question": "Was bedeutet der Ausdruck 'Das ist nicht mein Bier'?",
+            "options": ["Das ist zu teuer", "Das ist nicht mein Problem", "Das ist zu weit weg", "Das ist zu schwierig"],
+            "answer": "Das ist nicht mein Problem"
+        },
+        {
+            "question": "Was ist das Gegenteil von 'künstlich'?",
+            "options": ["Natürlich", "Synthetisch", "Falsch", "Echt"],
+            "answer": "Natürlich"
+        },
+        {
+            "question": "Was bedeutet der Ausdruck 'Da liegt der Hund begraben'?",
+            "options": ["Da ist das Problem", "Da ist nichts los", "Da ist es gefährlich", "Da ist es teuer"],
+            "answer": "Da ist nichts los"
+        },
+        {
+            "question": "Wählen Sie das richtige Wort für 'eine schwierige Situation':",
+            "options": ["Die Zitrone", "Die Zwiebel", "Die Klemme", "Die Gurke"],
+            "answer": "Die Klemme"
+        },
+        {
+            "question": "Was ist das Synonym für 'begeistert'?",
+            "options": ["Enttäuscht", "Verärgert", "Aufgeregt", "Gelangweilt"],
+            "answer": "Aufgeregt"
+        }
+    ],
+    "C1": [
+        {
+            "question": "Was bedeutet die Redewendung 'Das ist Schnee von gestern'?",
+            "options": ["Das ist sehr alt", "Das ist nicht mehr relevant", "Das ist sehr kalt", "Das ist sehr schön"],
+            "answer": "Das ist nicht mehr relevant"
+        },
+        {
+            "question": "Was ist das Synonym für 'absichtlich'?",
+            "options": ["Zufällig", "Unbeabsichtigt", "Vorsätzlich", "Unwillkürlich"],
+            "answer": "Vorsätzlich"
+        },
+        {
+            "question": "Was bedeutet die Redewendung 'Tomaten auf den Augen haben'?",
+            "options": ["Etwas nicht sehen wollen", "Etwas nicht sehen können", "Etwas falsch sehen", "Etwas genau sehen"],
+            "answer": "Etwas nicht sehen können"
+        },
+        {
+            "question": "Was ist das Gegenteil von 'oberflächlich'?",
+            "options": ["Tiefgründig", "Flach", "Einfach", "Komplex"],
+            "answer": "Tiefgründig"
+        },
+        {
+            "question": "Was bedeutet die Redewendung 'Einen Bären aufbinden'?",
+            "options": ["Jemandem helfen", "Jemandem schaden", "Jemandem eine Geschichte erzählen", "Jemanden anlügen"],
+            "answer": "Jemanden anlügen"
+        },
+        {
+            "question": "Was ist das Synonym für 'zögerlich'?",
+            "options": ["Entschlossen", "Unentschlossen", "Sicher", "Unsicher"],
+            "answer": "Unentschlossen"
+        },
+        {
+            "question": "Was bedeutet die Redewendung 'Ins Gras beißen'?",
+            "options": ["Etwas verlieren", "Etwas gewinnen", "Sterben", "Leben"],
+            "answer": "Sterben"
+        },
+        {
+            "question": "Was ist das Gegenteil von 'künstlich'?",
+            "options": ["Natürlich", "Synthetisch", "Falsch", "Echt"],
+            "answer": "Natürlich"
+        },
+        {
+            "question": "Was bedeutet die Redewendung 'Das ist ein Katzensprung'?",
+            "options": ["Das ist sehr weit", "Das ist sehr nah", "Das ist sehr schwierig", "Das ist sehr einfach"],
+            "answer": "Das ist sehr nah"
+        },
+        {
+            "question": "Was ist das Synonym für 'begeistert'?",
+            "options": ["Enttäuscht", "Verärgert", "Aufgeregt", "Gelangweilt"],
+            "answer": "Aufgeregt"
+        }
+    ],
+    "C2": [
+        {
+            "question": "Was bedeutet 'Ambiguität'?",
+            "options": ["Einheitlichkeit", "Mehrdeutigkeit", "Unklarheit", "Offensichtlichkeit"],
+            "answer": "Mehrdeutigkeit"
+        },
+        {
+            "question": "Was ist das Synonym für 'konstruktiv'?",
+            "options": ["Zerstörerisch", "Aufbauend", "Negativ", "Kritisch"],
+            "answer": "Aufbauend"
+        },
+        {
+            "question": "Was bedeutet die Redewendung 'Etwas auf die lange Bank schieben'?",
+            "options": ["Etwas sofort erledigen", "Etwas verschieben", "Etwas vergessen", "Etwas erinnern"],
+            "answer": "Etwas verschieben"
+        },
+        {
+            "question": "Was ist das Gegenteil von 'proaktiv'?",
+            "options": ["Reaktiv", "Aktiv", "Passiv", "Inaktiv"],
+            "answer": "Reaktiv"
+        },
+        {
+            "question": "Was bedeutet 'Kohärenz'?",
+            "options": ["Unklarheit", "Zusammenhang", "Unterschied", "Gleichheit"],
+            "answer": "Zusammenhang"
+        },
+        {
+            "question": "Was ist das Synonym für 'effizient'?",
+            "options": ["Ineffizient", "Wirksam", "Unwirksam", "Unnütz"],
+            "answer": "Wirksam"
+        },
+        {
+            "question": "Was bedeutet die Redewendung 'Einen Zahn zulegen'?",
+            "options": ["Langsamer werden", "Schneller werden", "Aufhören", "Anfangen"],
+            "answer": "Schneller werden"
+        },
+        {
+            "question": "Was ist das Gegenteil von 'relevant'?",
+            "options": ["Irrelevant", "Wichtig", "Signifikant", "Bedeutend"],
+            "answer": "Irrelevant"
+        },
+        {
+            "question": "Was bedeutet 'Diskrepanz'?",
+            "options": ["Übereinstimmung", "Unterschied", "Gleichheit", "Ähnlichkeit"],
+            "answer": "Unterschied"
+        },
+        {
+            "question": "Was ist das Synonym für 'manipulieren'?",
+            "options": ["Ignorieren", "Beeinflussen", "Vermeiden", "Akzeptieren"],
+            "answer": "Beeinflussen"
+        }
+    ]
+}
