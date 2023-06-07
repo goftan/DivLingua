@@ -3,6 +3,7 @@ const quizContainer = document.getElementById('quiz-container');
 const submitButton = document.getElementById('submit-button');
 const nextButton = document.getElementById('next-button');
 const resultDiv = document.getElementById('result');
+const progressDiv = document.getElementById('progress');
 
 // Initialize quiz index, user answers, and total quizzes
 let quizIndex = 0;
@@ -22,6 +23,9 @@ fetch('/quiz/total')
 function loadQuiz(index) {
     // Clear quiz container
     quizContainer.innerHTML = '';
+
+    // Update progress
+    progressDiv.textContent = 'Question ' + (index + 1) + ' of ' + totalQuizzes;
 
     // Load quiz from backend
     fetch('/quiz/' + index)
@@ -92,5 +96,3 @@ submitButton.addEventListener('click', () => {
             resultDiv.textContent = 'You got ' + result.correct_count + ' correct answers.';
         });
 });
-
-
