@@ -1,8 +1,8 @@
-# file: main.py
+from pathlib import Path
 
 from flask import Flask
+
 from routes import quiz_bp
-from pathlib import Path
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 FRONTEND_DIR = BASE_DIR / 'frontend'

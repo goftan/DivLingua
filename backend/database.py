@@ -1,8 +1,7 @@
-# file: database.py
-
-from typing import List, Dict, Union, Any
-from pathlib import Path
 import json
+from pathlib import Path
+from typing import Dict, List, Any
+
 
 class Database:
     def __init__(self, db_path: Path):
@@ -17,8 +16,8 @@ class Database:
             print(f"File not found at {self.db_path}")
         except json.JSONDecodeError:
             print(f"File at {self.db_path} is not a valid JSON file")
-    
-    def get_quizzes(self, level: str) -> Dict[str, Any]:
+
+    def get_quizzes(self, level: str) -> List[Dict[str, Any]]:
         if not self.data:
             self.load_data()
         return self.data.get(level, [])

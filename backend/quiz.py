@@ -1,5 +1,7 @@
-from typing import Dict, List, Optional, Union
+from typing import Dict, Optional, Union
+
 from database import Database
+
 
 class Quiz:
     def __init__(self, db: Database, level: str):

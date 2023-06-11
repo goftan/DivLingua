@@ -1,8 +1,7 @@
-# file: utils.py
-
 from typing import List, Dict, Union
 from pathlib import Path
 import json
+
 
 def load_quizzes(quiz_file: Path) -> Union[List[Dict[str, Union[str, int]]], None]:
     try:
