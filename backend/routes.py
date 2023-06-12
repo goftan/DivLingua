@@ -1,25 +1,33 @@
 from pathlib import Path
 
-from flask import Blueprint, jsonify, request, render_template
+from flask import Blueprint, jsonify, request, render_template, session, redirect, url_for
 
 from quiz import Quiz
 from database import Database
+
 
 quiz_bp = Blueprint('quiz', __name__)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATABASE_DIR = BASE_DIR / 'database'
 
-# You can select the category here.
-LEVEL = "A1"
-
 db = Database((DATABASE_DIR / 'quizzes.json').resolve())
-quiz_obj = Quiz(db, LEVEL)
+quiz_obj = Quiz(db)
 
 
 @quiz_bp.route('/')
 def home():
-    return render_template('quiz.html')
+    return render_template('select_level.html')
+
+
+@quiz_bp.route('/select_level', methods=['GET', 'POST'])
+def select_level():
+    if request.method == 'POST':
+        # Store the selected level in the user's session
+        session['level'] = request.form.get('level')
+        quiz_obj.refresh_quizzes(session['level'])
+        return render_template('quiz.html')
+    return render_template('select_level.html')
 
 
 @quiz_bp.route('/quiz/<int:index>', methods=['GET'])

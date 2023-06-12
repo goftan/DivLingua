@@ -1,21 +1,26 @@
-from typing import Dict, Optional, Union
+from typing import Dict, Optional, Union, List
 
 from database import Database
+from flask import session
 
 
 class Quiz:
-    def __init__(self, db: Database, level: str):
+    def __init__(self, db: Database):
         self.db = db
-        self.quizzes = self.db.get_quizzes(level)
-
-    def refresh_quizzes(self, level: str) -> None:
-        self.quizzes = self.db.get_quizzes(level)
+        self.quizzes: List[Dict[str, Union[str, int]]] = []
 
     def get_quiz(self, index: int) -> Optional[Dict[str, Union[str, int]]]:
+        level = session.get('level')
+        if level is None or not isinstance(level, str):
+            raise ValueError("Level must be a non-empty string")
+        self.refresh_quizzes(level)
         if 0 <= index < len(self.quizzes):
             return self.quizzes[index]
         else:
             return None
+
+    def refresh_quizzes(self, level: str) -> None:
+        self.quizzes = self.db.get_quizzes(level)
 
     def get_total_quizzes(self) -> int:
         return len(self.quizzes)
