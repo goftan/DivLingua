@@ -1,11 +1,12 @@
 from typing import Dict, Optional, Union, List
 
-from database import Database
 from flask import session
+
+from database_reader import DatabaseReader
 
 
 class Quiz:
-    def __init__(self, db: Database):
+    def __init__(self, db: DatabaseReader):
         self.db = db
         self.quizzes: List[Dict[str, Union[str, int]]] = []
 

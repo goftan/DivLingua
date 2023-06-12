@@ -3,12 +3,12 @@ from pathlib import Path
 from typing import Dict, List, Any
 
 
-class Database:
+class DatabaseReader:
     def __init__(self, db_path: Path):
         self.db_path = db_path
         self.data = None
 
-    def load_data(self) -> None:
+    def load_json_data(self) -> None:
         """
         Load data from a JSON file at the specified path.
 
@@ -25,7 +25,7 @@ class Database:
 
     def get_quizzes(self, level: str) -> List[Dict[str, Any]]:
         if not self.data and self.data is not None:
-            self.load_data()
+            self.load_json_data()
             return self.data.get(level, [])
         else:
             raise ValueError(f"No quizzes found for level '{level}'")

@@ -1,17 +1,16 @@
 from pathlib import Path
 
-from flask import Blueprint, jsonify, request, render_template, session, redirect, url_for
+from flask import Blueprint, jsonify, request, render_template, session
 
+from database_reader import DatabaseReader
 from quiz import Quiz
-from database import Database
-
 
 quiz_bp = Blueprint('quiz', __name__)
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 DATABASE_DIR = BASE_DIR / 'database'
 
-db = Database((DATABASE_DIR / 'quizzes.json').resolve())
+db = DatabaseReader((DATABASE_DIR / 'quizzes.json').resolve())
 quiz_obj = Quiz(db)
 
 
@@ -44,10 +43,13 @@ def get_total_quizzes():
 @quiz_bp.route('/quiz', methods=['POST'])
 def check_answers():
     user_answers = request.json
-    return jsonify({'correct_count': quiz_obj.check_answers(user_answers)})
+    return jsonify({'correct_count': quiz_obj.check_answers(user_answers)})  # type: ignore
 
 
 @quiz_bp.route('/quiz/check_answers', methods=['POST'])
 def check_all_answers():
-    user_answers = {int(k): v for k, v in request.json.items()}
+    user_answers = request.json
+    if user_answers is None:
+        return jsonify({'error': 'No answers provided.'}), 400
+    user_answers = {int(k): v for k, v in user_answers.items()}
     return jsonify({'correct_count': quiz_obj.check_answers(user_answers)})
