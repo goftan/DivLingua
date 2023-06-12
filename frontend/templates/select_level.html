@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Level</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+</head>
+<body>
+    <h1>Select Level</h1>
+    <form action="{{ url_for('quiz.select_level') }}" method="post">
+        <label for="level">Level:</label>
+        <select id="level" name="level">
+            <option value="A1">A1</option>
+            <option value="A2">A2</option>
+            <option value="B1">B1</option>
+            <option value="B2">B2</option>
+            <option value="C1">C1</option>
+            <option value="C2">C2</option>
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+    <!-- <script src="/static/js/quiz.js"></script> -->
+</body>
+</html>
